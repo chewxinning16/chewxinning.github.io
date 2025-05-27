@@ -18,6 +18,7 @@
 
     #hamburger-nav {
         display: flex;
+        height: 15vh;
     }
 
     #experience, .experience-details-container {
@@ -26,6 +27,11 @@
 
     #profile, .section-container {
         display: block;
+    }
+
+    .profile-pic {
+        height: 25vh;
+        width: 25vh;
     }
 
     .arrow {
