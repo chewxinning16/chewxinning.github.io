@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Ning's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Xin Ning | Chew</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Xin Ning</div> 
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onClick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+            </div>
+        </div> 
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.jpeg" alt="Xin Ning's Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I am
+            </p>
+            <h1 class="title">Xin Ning</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onClick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+                     onClick="window.open('https://www.linkedin.com/in/xin-ning-chew/')">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon"
+                     onClick="window.open('https://github.com/xinning1611')">
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img class="about-pic" src="./assets/about-pic.png" alt="Profile Picture">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>6 months <br> Full-Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Computer Science Specialization in Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Passionate about building impactful software solutions and continuously learning new technologies.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                        software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Proficient </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Proficient in.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient in .</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient in creat.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient in cre.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Project</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Name Placeholder</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/yourusername/project1'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/yourusername/project1'">Something</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 2 Placeholder</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/yourusername/project1'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/yourusername/project1'">Something</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:yourname@example.com">email placeholder</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Email Icon" class="icon contact-icon">
+                <p><a href="mailto:yourname@example.com">linkedin placholder</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Email Icon" class="icon contact-icon">
+                <p><a href="mailto:yourname@example.com">phone number</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Xin Ning. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
