@@ -97,10 +97,13 @@ a:hover {
 
 .menu-links {
     position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
+    top: 150%;
+    right: -20%;
+    background: none;
     width: fit-content;
+    /* display: none; */
+    z-index: 999;
+    height: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -110,10 +113,10 @@ a:hover {
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    /* text-decoration: none; */
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -121,10 +124,11 @@ a:hover {
 }
 
 .menu-links.open {
+    /* display: block; */
     max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
+/* .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
@@ -134,9 +138,9 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
-}
+} */
 
-.hamburger-icon span:first-child {
+/* .hamburger-icon span:first-child {
     transform: none;
 }
 
@@ -146,7 +150,7 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
-}
+} */
 
 /* Sections */
 section {
@@ -284,11 +288,6 @@ section {
 .about-containers, .about-details-container {
     display: flex;
 }
-
-
-/* .about-pic {
-    border-radius: 2rem;
-} */
 
 .arrow {
     position: absolute;
@@ -505,6 +504,7 @@ article .icon {
 
 /* Footer */
 footer {
+    font-size: 0.8rem;
     height: 25vh;
     margin: 0 1rem;
 }
