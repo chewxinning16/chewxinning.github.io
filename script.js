@@ -1,10 +1,9 @@
 function toggleMenu() {
-    
-    // get the menu and icon elements
+    // A function to toggle or untoggle the menu and icon state
+
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
 
-    // toggle or untoggle the 'open' class on both elements
     const isOpen = menu.classList.contains('open');
     if (isOpen) {
         menu.classList.remove('open');

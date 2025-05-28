@@ -1,5 +1,4 @@
 /* General Styles */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
@@ -101,7 +100,6 @@ a:hover {
     right: -20%;
     background: none;
     width: fit-content;
-    /* display: none; */
     z-index: 999;
     height: fit-content;
     max-height: 0;
@@ -115,7 +113,6 @@ a:hover {
     text-align: center;
     font-size: 1rem;
     color: black;
-    /* text-decoration: none; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -124,33 +121,8 @@ a:hover {
 }
 
 .menu-links.open {
-    /* display: block; */
     max-height: 300px;
 }
-
-/* .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-} */
-
-/* .hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-} */
 
 /* Sections */
 section {
@@ -237,40 +209,23 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 {
+.btn-color {
     border: rgb(53, 53, 53) 0.1rem solid;
     background: white;
     color: rgb(53, 53, 53);
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
+.btn-color:hover {
     cursor: pointer;
     color: white;
     background: rgb(53, 53, 53);
 }
 
-/* .btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: white 0.1rem solid;
-} */
-
 .btn-container {
     gap: 1rem;
 }
 
-/* About */ 
+/* About section */ 
 #about {
     position: relative;
 }
@@ -293,6 +248,14 @@ section {
     position: absolute;
     right: -5rem;
     bottom: 2rem;
+    animation: arrow ease-in-out 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes arrow {
+  0% { transform: translate(0, -10px) scale(1); }
+  50% { transform: translate(0, 10px) scale(1.1); }
+  100% { transform: translate(0, -10px) scale(1); }
 }
 
 .details-container {
@@ -303,7 +266,6 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    /* max-height: 500px; */
 }
 
 .section-container {
@@ -321,14 +283,13 @@ section {
     text-align: justify;
 }
 
-/* Experience */
+/* Experience section */
 #experience {
     position: relative;
 }
 
 .experience-sub-title {
     color: rgb(85, 85, 85);
-    /* height: 7rem; */
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 1.3rem;
@@ -381,7 +342,7 @@ article .icon {
     cursor: default;
 }
 
-/* Projects */
+/* Projects section */
 #projects {
     position: relative;
 }
@@ -460,7 +421,7 @@ article .icon {
     align-items: center;
 }
 
-/* Contact */
+/* Contact section */
 #contact {
     display: flex;
     justify-content: center;
