@@ -97,7 +97,7 @@ a:hover {
 .menu-links {
     position: absolute;
     top: 150%;
-    right: -20%;
+    right: -150%;
     background: none;
     width: fit-content;
     z-index: 999;
@@ -110,7 +110,7 @@ a:hover {
 .menu-links a {
     display: block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     color: black;
     transition: all 0.3s ease-in-out;
@@ -481,17 +481,9 @@ article .icon {
     text-align: center;
 }
 
-/* .number-text {
-    color: rgb(53, 53, 53);
-    font-size: 0.9rem;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-} */
-
 .dots {
     text-align: center;
-    margin: 0.7rem 0;
+    margin: 0.7rem 0 0;
 }
 
 .dot {
